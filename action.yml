@@ -1,0 +1,17 @@
+name: 'Spawn reset data-container action'
+description: 'Reset a spawn data container'
+inputs:
+  dataContainer:
+    description: 'The data container to reset'
+    required: true
+  additionalArgs:
+    description: 'Additional arguments to provide (e.g flags for a command)'
+    required: false
+    default: ''
+
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.dataContainer }}
+    - ${{ inputs.additionalArgs }}
