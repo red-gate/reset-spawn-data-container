@@ -1,4 +1,7 @@
-name: 'Spawn reset data-container action'
+name: 'Reset Spawn Data Container'
+branding:
+  color: purple
+  icon: database
 description: 'Reset a spawn data container'
 inputs:
   dataContainer:
